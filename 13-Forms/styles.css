@@ -1,0 +1,136 @@
+/*reset*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  margin: 0;
+}
+
+fieldset,
+label,
+button {
+  border: none;
+}
+
+/*styles*/
+
+:root {
+    --spacer-1: 0.25em;
+    --spacer-2: 0.5em;
+    --spacer-3: 1em;
+    --spacer-4: 2em;
+
+    --body-color: #eaedf0;
+    --containers-color: #f6f7f8;
+    --button-color: #5995da;
+}
+
+body {
+    background-color: var(--body-color);
+    color: #5D6063;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.container {
+    width:95%;
+    margin: 0 auto;
+    padding: var(--spacer-3);
+}
+
+header {
+    padding: var(--spacer-3) var(--spacer-3);
+    text-align: center;
+}
+
+header,
+main {
+    background-color: var(--containers-color);
+    padding: var(--spacer-3) var(--spacer-3);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+.label {
+  padding: 0.25rem;
+}
+
+input,
+.input {
+  margin: 0.5rem;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    min-height: 7rem;
+}
+
+#abstract-label {
+  align-self: flex-start;
+}
+
+button {
+  background-color: var(--button-color);
+  color: #fff;
+  display: block;
+  padding: var(--spacer-2);
+}
+
+/*utilities*/
+
+.spacer-2 {
+    margin-bottom: var(--spacer-2);
+}
+
+.spacer-3 {
+    margin-bottom: var(--spacer-3);
+}
+
+.spacer-4 {
+    margin-bottom: var(--spacer-4);
+}
+
+@media only screen and (min-width: 901px) {
+  .container {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+
+  fieldset {
+    flex-direction: row;
+  }
+
+  label,
+  .label {
+    width: 10rem;
+    align-self: center;
+    padding: 0.25rem;
+  }
+
+  input,
+  .input {
+    flex: 1;
+    align-self: center;
+    margin: 0;
+  }
+
+  #abstract-label {
+    align-self: flex-start;
+  }
+}

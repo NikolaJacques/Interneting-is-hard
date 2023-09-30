@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Speaker submission</title>
+</head>
+<body>
+    <div class="container">
+        <header class="section spacer-4">
+            <h1 class="spacer-2">Speaker submission</h1>
+            <p>
+                Want to speak at our fake conference? Fill out this form.
+            </p>
+        </header>
+        <main class="section">
+            <form action="" method="POST">
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </fieldset>
+                <fieldset>
+                    <p for="type-of-talk" class="label">Type of talk</p>
+                    <div class="input">
+                        <input type="radio" name="type-of-talk" id="main-stage" value="main-stage">
+                        <label for="type-of-talk">Main stage</label>
+                        <input type="radio" name="type-of-talk" id="workshop" value="workshop">
+                        <label for="type-of-talk">Workshop</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="t-shit-size">T-shirt size</label>
+                    <select name="t-shit-size" id="t-shit-size" class="input">
+                        <option value="s">Small</option>
+                        <option value="m">Medium</option>
+                        <option value="l">Large</option>
+                        <option value="xl">Extra Large</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="abstract" id="abstract-label">Abstract</label>
+                    <div class="input">
+                        <textarea name="abstract" id="abstract"></textarea>
+                        <p class="spacer-2">Describe your talk in 500 words or less</p>
+                        <div>
+                            <input type="checkbox" name="available" id="available">
+                            <label for="available">I'm actually available the date of the talk</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="label"></div>
+                    <button action="submit" class="input">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
